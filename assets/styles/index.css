@@ -1,5 +1,9 @@
+
 body{
     background-color: #F5F5FF;
+    margin: 0;
+    font-family: lato, sans-serif;
+    color: #1C192C;
 }
 
 a{  
@@ -7,6 +11,414 @@ a{
     text-decoration: none;
 }
 
-.menu li{
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
     list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: 'cairo', sans-serif;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero h1 span{
+    color: #7A7ACC;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+hr{
+    margin: 0;
+    justify-self: center;
+    width: 376px;
+    border: none;
+    height: 2px;
+    background-color: rgba(0, 0, 91, 0.10);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C192C;
+    padding: 20px 124px;
+    font-family: 'cairo', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li{
+    padding: 10px 16px;
+    color: #F5F5FF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    text-wrap: nowrap;
+}
+
+.menu li:hover{
+    background-color: #F5F5FF;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #1C192C;
+}
+
+.profil{
+    padding: 4px 8px;
+    color: #F5F5FF;
+}
+
+.profil:hover{
+    border: #F5F5FF 2px solid;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.hero{
+    position: relative;
+    background-color: rgba(122, 122, 204, 0.20) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 86px 328px 64px 328px;
+    gap: 64px;
+}
+
+.hero p{
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.hero p span{
+    color: #7A7ACC;
+    font-weight: 800;
+}
+
+.button{
+    padding: 8px 32px;
+    background-color: #1C192C;
+    border: #1C192C 2px solid;
+    border-radius: 24px;
+    color: #F5F5FF;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button:hover{
+    background-color: #F5F5FF;
+    color: #1C192C;
+    border: #1C192C 2px solid;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    z-index: 1;
+}
+
+.hero .hero-image{
+    position: absolute;
+    inset-block-start: 20px;
+    z-index: 0; 
+}
+
+.videos-e-learning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 124px;
+}
+
+.content-e-learning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.thumbnails-videos{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.thumbnails-videos figure{
+    margin: 0;
+}
+
+.avantages-e-learning{
+    background-color: rgba(122, 122, 204, 0.20);
+    padding: 64px 124px;
+}
+
+.content-avantage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avantages-cards-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    padding: 64px 124px;
+}
+
+.avantage-card {
+    display: flex;
+    height: 325px;
+    width: 350px;
+    padding: 32px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex: 1 0 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 91, 0.20);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 91, 0.20);
+}
+
+.avantage-card h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.avantage-card p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.abonnements-plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 124px;
+}
+
+.content-abonnements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.abonnements-cards-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.abonnement-card{
+    display: flex;
+    height: 200px;
+    width: 376px;
+    padding: 30px 16px;
+    justify-content: space-between;
+    align-items: top;
+    border-radius: 8px;
+    border: 1px solid rgba(69, 69, 115, 0.20);
+    background: var(--Carte, linear-gradient(145deg, #F5F5FF 20.64%, #B2B2FF 135.45%));
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 91, 0.20), 4px 4px 8px 0 #FFF inset;
+}
+
+.card-content p{    
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.card-content ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    gap: 8px;
+}
+
+.abonnement-card span{
+    align-self: center;
+    font-size: 80px;
+    color: #1C192C;
+}
+
+.abonnement-card:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px 12px 0 rgba(0, 0, 91, 0.30), 6px 6px 12px 0 #FFF inset;
+}
+
+.formations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(122, 122, 204, 0.20);
+    padding: 64px 124px;
+    gap: 64px;
+}
+
+.content-formations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.content-formations ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content-formations li{
+    width: 988px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 29px;
+    background: var(--Foundation-Blue-Light, #F5F5FF);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.content-formations li:hover{
+    cursor: pointer;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(122, 122, 204, 0.20);
+    padding: 0px 124px 64px 124px;
+    gap: 64px;
+}
+
+footer{
+    background-color: #1C192C;
+    color: #F5F5FF;
+    padding: 32px 430px;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    align-items: center;
+}     
+
+footer .info-contact{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+footer .info-contact li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .reseaux-sociaux{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+}
+
+footer .reseaux-sociaux ul{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+footer .reseaux-sociaux li{
+    padding: 4px;
+    align-items: center;
+}
+
+footer .reseaux-sociaux li:hover{
+    cursor: pointer;
+    border: #F5F5FF 2px solid;
+    border-radius: 8px;
+}
+
+footer .liens-mentions-legales{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    width: 100%;
+    justify-content: center;
+}
+
+footer .liens-mentions-legales h3{
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+footer .liens-mentions-legales ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+footer .liens-mentions-legales li{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+footer .liens-mentions-legales li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer p{
+    font-size: 16px;
+    font-weight: 500;
 }
