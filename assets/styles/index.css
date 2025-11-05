@@ -1,0 +1,12 @@
+body{
+    background-color: #F5F5FF;
+}
+
+a{  
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu li{
+    list-style: none;
+}
