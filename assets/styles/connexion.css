@@ -1,4 +1,15 @@
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    padding: 84px 124px 64px 124px;
+}
+
 .connexion-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #f9f9f9;
     padding: 40px;
     border-radius: 8px;
@@ -9,6 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 576px;
 }
 
 .connexion-form label {
