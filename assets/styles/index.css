@@ -331,6 +331,13 @@ nav{
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.35);
 }
 
+.nom-formation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -343,7 +350,7 @@ nav{
 footer{
     background-color: #1C192C;
     color: #F5F5FF;
-    padding: 32px 430px;
+    padding: 64px 430px;
     display: flex;
     gap: 48px;
     flex-direction: column;
