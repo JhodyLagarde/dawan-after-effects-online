@@ -1,0 +1,117 @@
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    padding: 84px 124px 64px 124px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 86px;
+}
+
+.form {
+    padding: 34px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 579px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0, 0, 91, 0.20);
+    background: linear-gradient(145deg, #F5F5FF 20.64%, #B2B2FF 135.45%);
+    box-shadow: 0 4px 4px 0 #FFF inset, 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container-input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form .form-label {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1C192C;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.mdp-oublie {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form button {
+    font-family: cairo, sans-serif;
+    background-color: #1C192C;
+    color: #F5F5FF;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #1C192C;
+    align-self: center;
+    padding: 8px 32px;
+}
+
+.form button:hover {
+    background-color: #F5F5FF;
+    color: #1C192C;
+}
+
+.form-check{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inscription-link{
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.form-section a{
+    text-decoration: underline;
+}
+
+.spec{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.spec a{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title-spec{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-section li{
+    list-style: inside;
+    font-size: 12px;
+}
+
+.inscription-section {
+    margin-bottom: 64px;
+}
+
+.contact{
+    padding-top: 64px;
+}

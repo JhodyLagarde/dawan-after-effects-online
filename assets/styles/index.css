@@ -51,6 +51,23 @@ hr{
     background-color: rgba(0, 0, 91, 0.10);
 }
 
+.button{
+    padding: 8px 32px;
+    background-color: #1C192C;
+    border: #1C192C 2px solid;
+    border-radius: 24px;
+    color: #F5F5FF;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button:hover{
+    background-color: #F5F5FF;
+    color: #1C192C;
+    border: #1C192C 2px solid;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -104,6 +121,15 @@ nav{
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(122, 122, 204, 0.20);
+    padding: 0px 124px 64px 124px;
+    gap: 64px;
 }
 
 footer{

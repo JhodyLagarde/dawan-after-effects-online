@@ -21,23 +21,6 @@
     font-weight: 800;
 }
 
-.button{
-    padding: 8px 32px;
-    background-color: #1C192C;
-    border: #1C192C 2px solid;
-    border-radius: 24px;
-    color: #F5F5FF;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.button:hover{
-    background-color: #F5F5FF;
-    color: #1C192C;
-    border: #1C192C 2px solid;
-}
-
 .hero-content{
     display: flex;
     flex-direction: column;
@@ -230,11 +213,3 @@
     gap: 16px;
 }
 
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(122, 122, 204, 0.20);
-    padding: 0px 124px 64px 124px;
-    gap: 64px;
-}

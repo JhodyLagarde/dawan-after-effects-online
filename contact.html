@@ -29,32 +29,44 @@
         </nav>      
     </header>
     <main>
-        <h1>Connexion</h1>
-        <section class="form-section connexion-section">
+        <h1>Nous contacter</h1>
+        <section class="form-section inscription-section">
             <form class="form" action="#" method="post">
 
                 <div class="container-input-form">
-                    <label class="form-label" for="email">Identifiant</label>
+                    <label class="form-label" for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="container-input-form">
+                    <label class="form-label" for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div class="container-input-form">
+                    <label class="form-label" for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="container-input-form">
-                    <label class="form-label" for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" required>
-                    <a href="#" class="mdp-oublie">Mot de passe oublié</a>
+                    <label class="form-label" for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" required>
                 </div>
 
-                <button type="submit">Connection</button>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        Se souvenir de moi
-                    </label>
+                <div class="container-input-form">
+                    <label class="form-label" for="objet">Objet</label>
+                    <input type="text" id="objet" name="objet" required>
                 </div>
+
+                <div class="container-input-form">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <button type="submit">Envoyer</button>
 
             </form>
-            <p class="inscription-link">Vous n'avez pas encore de compte ? <a href="inscription.html">Inscrivez-vous ici</a></p>
+            <a href="abonnements.html"> Consulter les abonnements</a></p>
         </section>
     <footer>    
         <div class="info-contact">
