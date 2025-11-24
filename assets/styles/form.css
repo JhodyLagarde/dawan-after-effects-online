@@ -40,9 +40,18 @@ h1{
 
 .form input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 91, 0.2);
     border-radius: 4px;
     font-size: 16px;
+}
+
+.form textarea {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 91, 0.2);
+    border-radius: 4px;
+    font-size: 16px;
+    min-height: 160px;
+    resize: vertical;
 }
 
 .mdp-oublie {
@@ -78,7 +87,7 @@ h1{
     margin-top: 24px;
     text-align: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
 }
 
@@ -114,4 +123,9 @@ h1{
 
 .contact{
     padding-top: 64px;
+}
+
+.consulter-abo{
+    padding: 24px 0 14px 0;
+    font-size: 16px;
 }
