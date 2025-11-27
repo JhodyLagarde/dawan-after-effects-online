@@ -89,12 +89,25 @@ nav{
 }
 
 .menu li{
-    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #F5F5FF;
     font-size: 20px;
     font-weight: 500;
     line-height: 100%;
     text-wrap: nowrap;
+}
+
+.menu li a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 16px;
+}
+
+.menu li a span{
+    font-size: 18px;
 }
 
 .menu li:hover{
@@ -169,8 +182,15 @@ footer .reseaux-sociaux ul{
 }
 
 footer .reseaux-sociaux li{
-    padding: 4px;
+    padding: 3px;
     align-items: center;
+    border: transparent 2px solid;
+}
+
+footer .reseaux-sociaux li a{
+    display: flex;
+    width: 30px;
+    height: 30px;
 }
 
 footer .reseaux-sociaux li:hover{
@@ -218,3 +238,59 @@ footer p{
 .contact{
     padding-top: 64px;
 }
+
+.error-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+    padding: 86px 0 64px 0;
+}
+
+.error-page__message{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.error-page__message-title{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.error-page__message-description{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.error-page__back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.error-page__back-description{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.error-page__back-link{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #1C192C;
+    color: #F5F5FF;
+    border: #1C192C 2px solid;
+    padding: 8px 32px;
+    border-radius: 24px;
+}
+
+.error-page__back-link:hover{
+    background-color: #F5F5FF;
+    color: #1C192C;
+    text-decoration: none;
+}
+
