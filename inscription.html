@@ -1,125 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/styles/index.css">
-    <link rel="stylesheet" href="assets/styles/form.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
-</head>
-<body>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <link rel="stylesheet" href="assets/styles/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <a class="logo" href="accueil.html">
-            <img src="/assets/images/logo-after-affects-online.svg" alt="Logo After Effects Online">
+      <a class="logo" href="accueil.html">
+        <img
+          src="/assets/images/logo-after-affects-online.svg"
+          alt="Logo After Effects Online"
+        />
+      </a>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="abonnements.html">Abonnements</a></li>
+          <li><a href="chapitres.html">E-learning</a></li>
+          <li>
+            <a
+              href="https://www.dawan.fr/formations/audiovisuel/after-effects"
+              target="_blank"
+              >Nos formations
+              <span class="material-symbols-rounded">open_in_new</span></a
+            >
+          </li>
+          <li><a href="contact.html">Contacter</a></li>
+          <li><a href="faq.html">F.A.Q</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+        </ul>
+
+        <a class="profil" href="#">
+          <span class="material-symbols-rounded">person</span>
         </a>
-
-        <nav>
-            <ul class="menu">
-                <li><a href="abonnements.html">Abonnements</a></li>
-                <li><a href="chapitres.html">E-learning</a></li>
-                <li><a href="https://www.dawan.fr/formations/audiovisuel/after-effects" target="_blank">Nos formations <span class="material-symbols-rounded">open_in_new</span></a></li>
-                <li><a href="contact.html">Contacter</a></li>
-                <li><a href="faq.html">F.A.Q</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-            </ul>
-
-             <a class="profil" href="#">
-                <span class="material-symbols-rounded">person</span>
-            </a>  
-        </nav>      
+      </nav>
     </header>
     <main>
-        <h1>Inscription</h1>
-        <section class="form-section inscription-section">
-            <form class="form" action="#" method="post">
+      <h1>Inscription</h1>
+      <section class="form-section inscription-section">
+        <form class="form" action="#" method="post">
+          <div class="container-input-form">
+            <label class="form-label" for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
 
-                <div class="container-input-form">
-                    <label class="form-label" for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
+          <div class="container-input-form">
+            <label class="form-label" for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required />
+          </div>
 
-                <div class="container-input-form">
-                    <label class="form-label" for="prenom">Prénom</label>
-                    <input type="text" id="prenom" name="prenom" required>
-                </div>
+          <div class="container-input-form">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-                <div class="container-input-form">
-                    <label class="form-label" for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+          <div class="container-input-form">
+            <label class="form-label" for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" required />
+          </div>
 
-                <div class="container-input-form">
-                    <label class="form-label" for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
+          <div class="container-input-form">
+            <label class="form-label" for="confirm-password"
+              >Confirmer le mot de passe</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
 
-                <div class="container-input-form">
-                    <label class="form-label" for="confirm-password">Confirmer le mot de passe</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-
-                <div class="spec">
-                    <p class="title-spec">Spécifications du mots de passe</p>
-                    <ul>
-                        <li>Au moins 12 caractères</li>
-                        <li>Un caractères en majuscule</li>
-                        <li>Un caractères en minuscule</li>
-                        <li>Un chiffre</li>
-                        <li>Un caractère spécial ($, ?, ...)</li>
-                    </ul>
-                    <a href="#">Termes et conditions d'utilisation</a>
-                    <a href="#">Politique de confidentialité</a>
-                </div>
-
-                <button type="submit">S'inscrire</button>
-
-            </form>
-            <p class="inscription-link">Vous avez déjà un compte  ? <a href="connexion.html"> Connectez vous</a></p>
-        </section>
-        <section class="contact">
-            <h2>Vous avec une question ?</h2>
-            <a href="contact.html" class="button">Nous contacter</a>
-        </section>
-    <footer>    
-        <div class="info-contact">
+          <div class="spec">
+            <p class="title-spec">Spécifications du mots de passe</p>
             <ul>
-                <li>aftereffects@formation.online</li>
-                <li>09 72 37 73 73</li>
+              <li>Au moins 12 caractères</li>
+              <li>Un caractères en majuscule</li>
+              <li>Un caractères en minuscule</li>
+              <li>Un chiffre</li>
+              <li>Un caractère spécial ($, ?, ...)</li>
             </ul>
+            <a href="#">Termes et conditions d'utilisation</a>
+            <a href="#">Politique de confidentialité</a>
+          </div>
+
+          <button type="submit">S'inscrire</button>
+        </form>
+        <p class="inscription-link">
+          Vous avez déjà un compte ?
+          <a href="connexion.html"> Connectez vous</a>
+        </p>
+      </section>
+      <section class="contact">
+        <h2>Vous avec une question ?</h2>
+        <a href="contact.html" class="button">Nous contacter</a>
+      </section>
+    </main>
+    <footer>
+      <div class="info-contact">
+        <ul>
+          <li>aftereffects@formation.online</li>
+          <li>09 72 37 73 73</li>
+        </ul>
+      </div>
+      <div class="reseaux-sociaux">
+        <img
+          src="assets/images/logo-after-affects-online.svg"
+          alt="logo After Effects Online"
+        />
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/user/dawantv"
+              ><img src="assets/images/youtube-icon.svg" alt="Icon Youtube"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/dawan"
+              ><img src="assets/images/linkedin-icon.svg" alt="Icon Linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://fr-fr.facebook.com/DawanFrance"
+              ><img src="assets/images/facebook-icon.svg" alt="Icon Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/dawanfrance/"
+              ><img src="assets/images/instagram-icon.svg" alt="Icon Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="liens-mentions-legales">
+        <div class="liens-importants">
+          <h3>Liens importants</h3>
+          <ul>
+            <!-- placeholder noms des liens -->
+            <li><a href="#">Abonnements</a></li>
+            <li><a href="#">E-learning</a></li>
+            <li><a href="#">Nos formations</a></li>
+            <li><a href="#">Contacter</a></li>
+            <li><a href="#">F.A.Q</a></li>
+            <li><a href="#">À propos</a></li>
+          </ul>
         </div>
-        <div class="reseaux-sociaux">
-            <img src="assets/images/logo-after-affects-online.svg" alt="logo After Effects Online">
-            <ul>
-                <li><a href="https://www.youtube.com/user/dawantv"><img src="assets/images/youtube-icon.svg" alt="Icon Youtube"></a></li>
-                <li><a href="https://www.linkedin.com/company/dawan"><img src="assets/images/linkedin-icon.svg" alt="Icon Linkedin"></a></li>
-                <li><a href="https://fr-fr.facebook.com/DawanFrance"><img src="assets/images/facebook-icon.svg" alt="Icon Facebook"></a></li>
-                <li><a href="https://www.instagram.com/dawanfrance/"><img src="assets/images/instagram-icon.svg" alt="Icon Instagram"></a></li>
-            </ul>
+        <div class="mentions-legales">
+          <h3>Mentions légales</h3>
+          <ul>
+            <!-- placeholder noms des liens -->
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Plan du site</a></li>
+          </ul>
         </div>
-        <div class="liens-mentions-legales">   
-            <div class="liens-importants">
-                <h3>Liens importants</h3>
-                <ul> 
-                    <li><a href="#">Abonnements</a></li>
-                    <li><a href="#">E-learning</a></li>
-                    <li><a href="#">Nos formations</a></li>
-                    <li><a href="#">Contacter</a></li>
-                    <li><a href="#">F.A.Q</a></li>
-                    <li><a href="#">À propos</a></li>
-                </ul>
-            </div>
-            <div class="mentions-legales"> 
-                <h3>Mentions légales</h3>
-                <ul>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                </ul>    
-            </div>
-        </div>
-        <p>&copy; Dawan 2025. Tous droits réservés.</p>
+      </div>
+      <p>&copy; Dawan 2025. Tous droits réservés.</p>
     </footer>
-</body>
+  </body>
 </html>
