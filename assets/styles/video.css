@@ -20,6 +20,12 @@ h1 {
   gap: 16px;
 }
 
+.section-video p {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
 .placeholder-player {
   width: 778px;
 }
@@ -52,6 +58,11 @@ h1 {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+}
+
+.retranscription-txt-locked {
+  filter: blur(10px);
+  user-select: none;
 }
 
 .formateur {
