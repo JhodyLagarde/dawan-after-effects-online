@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/styles/index.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -36,37 +46,212 @@
           <li><a href="apropos.html">À propos</a></li>
         </ul>
 
-        <a class="profil" href="#">
-          <span class="material-symbols-rounded">person</span>
-        </a>
+        <div class="dropdown">
+          <button
+            class="profil dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-rounded">person</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="profil-head">
+              <div class="profil-head-content">
+                <div class="placeholder-profil-picture"></div>
+                <p>John Doe</p>
+              </div>
+              <hr />
+            </li>
+            <li><a class="dropdown-item" href="profil.html">Mon profil</a></li>
+            <li>
+              <a class="dropdown-item" href="historique.html"
+                >Historique de vidéo</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
       <h1>A propos</h1>
-      <section class="dawan-about">
-        <div>
-          <h2>Dawan</h2>
-          <img src="" alt="" />
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A aut eum
-          ducimus velit, dolorum reprehenderit eos sit totam delectus
-          voluptatibus natus, cupiditate, debitis esse? Quia delectus quaerat
-          sequi officiis tempore.
-        </p>
-      </section>
-      <section class="dawan-head">
-        <img src="" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur
-          nisi vero voluptatum fugiat porro molestias quasi nulla consectetur!
-          Sunt expedita accusamus nihil similique provident? Unde itaque
-          necessitatibus pariatur maiores.
-        </p>
-      </section>
-      <section class="dawan-mission">
+      <div class="dawan-presentation">
+        <section class="dawan-about">
+          <div class="logo-dawan">
+            <h2>Dawan</h2>
+            <img src="assets/images/logo-dawan.svg" alt="logo dawan" />
+          </div>
+          <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              iste amet quia sunt rem. Provident enim nobis rerum delectus
+              natus, corrupti ipsam iure culpa cupiditate, saepe, impedit
+              blanditiis eligendi nesciunt consectetur. Accusantium veniam
+              cumque aperiam cum, debitis nostrum, consequatur quia vel
+              assumenda optio similique odio tempore voluptate architecto
+              pariatur ullam!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+              voluptate obcaecati sit libero aut voluptates perspiciatis vitae
+              explicabo. Magnam, soluta. Ad labore rem doloremque perferendis,
+              consequatur veniam veritatis quisquam tenetur!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+              possimus.
+            </p>
+          </div>
+        </section>
+        <section class="dawan-fondeur">
+          <img
+            src="assets/images/Jerome MERCKLING.png"
+            alt="Jerome MERCKLING fondateur de Dawan"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            aspernatur nisi vero voluptatum fugiat porro molestias quasi nulla
+            consectetur! Sunt expedita accusamus nihil similique provident? Unde
+            itaque necessitatibus pariatur maiores.
+          </p>
+        </section>
+      </div>
+      <section class="dawan-avis">
         <h2>Avis des utilisateurs sur les formations After Effects</h2>
+
+        <div id="testimonialCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- ITEM 1 -->
+            <div class="carousel-item active">
+              <div
+                class="testimonial-card align-items-center p-4 rounded text-center"
+              >
+                <div
+                  class="d-flex align-items-center me-4 mb-4 justify-content-center"
+                >
+                  <div
+                    src="https://via.placeholder.com/90"
+                    class="rounded-circle me-4 avatar-placeholder"
+                    alt="Avatar placeholder"
+                  ></div>
+                  <div>
+                    <h5 class="fw-bold mb-0">Emily Jeff</h5>
+                    <p class="text-muted mb-1">Lorem, ipsum dolor.</p>
+                  </div>
+                </div>
+                <div class="flex-grow-1 text-center">
+                  <div class="text-warning mb-4">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <p class="avis-text mb-0">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cum enim ipsam harum.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="carousel-item">
+              <div
+                class="testimonial-card align-items-center p-4 rounded text-center"
+              >
+                <div
+                  class="d-flex align-items-center me-4 mb-4 justify-content-center"
+                >
+                  <div
+                    src="https://via.placeholder.com/90"
+                    class="rounded-circle me-4 avatar-placeholder"
+                    alt="Avatar placeholder"
+                  ></div>
+                  <div>
+                    <h5 class="fw-bold mb-0">Sarah Miles</h5>
+                    <p class="text-muted mb-1">Lorem, ipsum dolor.</p>
+                  </div>
+                </div>
+                <div class="flex-grow-1 text-center">
+                  <div class="text-warning mb-4">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+
+                  <p class="avis-text mb-0">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="carousel-item">
+              <div
+                class="testimonial-card align-items-center p-4 rounded text-center"
+              >
+                <div
+                  class="d-flex align-items-center me-4 mb-4 justify-content-center"
+                >
+                  <div
+                    src="https://via.placeholder.com/90"
+                    class="rounded-circle me-4 avatar-placeholder"
+                    alt="Avatar placeholder"
+                  ></div>
+                  <div>
+                    <h5 class="fw-bold mb-0">John Doe</h5>
+                    <p class="text-muted mb-1">Lorem, ipsum dolor.</p>
+                  </div>
+                </div>
+                <div class="flex-grow-1 text-center">
+                  <div class="text-warning mb-4">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+
+                  <p class="avis-text mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas architecto deleniti magnam voluptatibus ex ducimus
+                    quidem eius aspernatur, tenetur id.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ARROWS -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-arrow bg-white shadow rounded-circle">
+              <i class="bi bi-chevron-left text-dark"></i>
+            </span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-arrow bg-white shadow rounded-circle">
+              <i class="bi bi-chevron-right text-dark"></i>
+            </span>
+          </button>
+        </div>
       </section>
     </main>
 

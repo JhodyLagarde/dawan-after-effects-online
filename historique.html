@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/styles/index.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -36,9 +42,32 @@
           <li><a href="apropos.html">À propos</a></li>
         </ul>
 
-        <a class="profil" href="#">
-          <span class="material-symbols-rounded">person</span>
-        </a>
+        <div class="dropdown">
+          <button
+            class="profil dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-rounded">person</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="profil-head">
+              <div class="profil-head-content">
+                <div class="placeholder-profil-picture"></div>
+                <p>John Doe</p>
+              </div>
+              <hr />
+            </li>
+            <li><a class="dropdown-item" href="profil.html">Mon profil</a></li>
+            <li>
+              <a class="dropdown-item" href="historique.html"
+                >Historique de vidéo</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -46,17 +75,68 @@
       <h1>Historique</h1>
       <section>
         <ul class="history-list">
-          <li>
-            <a href="video.html">Titre de la vidéo 1</a>
-            <span class="date-watched">Regardée le 01/01/2024</span>
+          <li class="history-list-item">
+            <a class="history-list-link" href="video.html">
+              <img
+                src="assets/images/player-video-minia-historique.png"
+                alt="Placeholder miniature vidéo hisorique"
+              />
+              <div class="history-item-content">
+                <h3 class="history-item-title">Chapitre 1 : Vidéo 2</h3>
+                <p class="history-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores esse eveniet alias animi amet odit non nam error,
+                  recusandae optio! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Quas temporibus amet ea minima nostrum iusto
+                  vel consequatur nulla eum sapiente? Minus saepe eveniet
+                  corporis temporibus deleniti ipsum, id architecto facilis?
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Error laborum harum eos repellendus consequatur accusantium
+                  explicabo architecto? Saepe quis nobis vero delectus tempore
+                  voluptatem rem eaque, eos error officia maiores, molestias
+                  veniam. Quae dolore consectetur, itaque, temporibus excepturi
+                  veritatis eligendi ipsam saepe nostrum suscipit pariatur illum
+                  explicabo ut repudiandae ullam eaque vel architecto!
+                  Voluptatum deserunt labore fugiat aperiam facilis. Eum, iste
+                  eius cumque laboriosam perferendis modi numquam odit inventore
+                  voluptas repellat aliquid laborum iusto rerum est aspernatur
+                  vero amet doloremque doloribus. Dicta tempora ullam
+                  accusantium, incidunt nihil maiores facere hic!
+                </p>
+              </div>
+            </a>
           </li>
-          <li>
-            <a href="video.html">Titre de la vidéo 2</a>
-            <span class="date-watched">Regardée le 05/01/2024</span>
+          <li class="history-list-item">
+            <a class="history-list-link" href="video.html">
+              <img
+                src="assets/images/player-video-minia-historique.png"
+                alt="Placeholder miniature vidéo hisorique"
+              />
+              <div class="history-item-content">
+                <h3 class="history-item-title">Chapitre 1 : Vidéo 2</h3>
+                <p class="history-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores esse eveniet alias animi amet odit non nam error,
+                  recusandae optio!
+                </p>
+              </div>
+            </a>
           </li>
-          <li>
-            <a href="video.html">Titre de la vidéo 3</a>
-            <span class="date-watched">Regardée le 10/01/2024</span>
+          <li class="history-list-item">
+            <a class="history-list-link" href="video.html">
+              <img
+                src="assets/images/player-video-minia-historique.png"
+                alt="Placeholder miniature vidéo hisorique"
+              />
+              <div class="history-item-content">
+                <h3 class="history-item-title">Chapitre 1 : Vidéo 2</h3>
+                <p class="history-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores esse eveniet alias animi amet odit non nam error,
+                  recusandae optio!
+                </p>
+              </div>
+            </a>
           </li>
           <!-- Ajoutez plus d'éléments d'historique si nécessaire -->
         </ul>
