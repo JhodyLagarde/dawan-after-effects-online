@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>After Effects Online</title>
     <link rel="stylesheet" href="assets/styles/index.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
     <script
@@ -19,9 +15,86 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/script/script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="mobile-header" class="topbar-wrapper" aria-hidden="false">
+      <!-- Barre supérieure -->
+      <div
+        class="topbar d-flex align-items-center justify-content-between position-fixed top-0 start-0 w-100"
+      >
+        <a href="index.html" class="logo-link">
+          <img
+            src="assets/images/logo-after-affects-online.svg"
+            alt="Logo After Effects Online"
+            class="logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuTop"
+        >
+          <span class="material-icons-round">menu</span>
+        </button>
+      </div>
+
+      <!-- Menu Offcanvas -->
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="menuTop">
+        <div class="offcanvas-body">
+          <div class="menu-content">
+            <!-- Collapse Profil -->
+            <div class="profile-wrapper">
+              <div class="profile-container">
+                <button
+                  class="profile-collapse-btn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#profileCollapse"
+                >
+                  <span class="material-icons-round profile-icon"
+                    >account_circle</span
+                  >
+                  <span class="profile-name">John Doe</span>
+                </button>
+
+                <div id="profileCollapse" class="collapse">
+                  <div class="collapse-profile-content">
+                    <a href="profil.html">Mon profil</a>
+                    <a href="historique.html">Historique</a>
+                    <a href="#">Déconnexion</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Liste de navigation -->
+            <div class="menu-list">
+              <a href="abonnements.html">Abonnement</a>
+              <a href="chapitres.html">E-learning</a>
+
+              <a
+                href="https://www.dawan.fr/formations/audiovisuel/after-effects"
+                target="_blank"
+              >
+                Nos formations
+                <span class="material-icons-round external-icon"
+                  >open_in_new</span
+                >
+              </a>
+
+              <a href="contact.html">Contacter</a>
+              <a href="faq.html">F.A.Q</a>
+              <a href="apropos.html">À propos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HEADER DESKTOP -->
+    <header id="desktop-header" aria-hidden="true">
       <a class="logo" href="index.html">
         <img
           src="/assets/images/logo-after-affects-online.svg"
@@ -37,9 +110,10 @@
             <a
               href="https://www.dawan.fr/formations/audiovisuel/after-effects"
               target="_blank"
-              >Nos formations
-              <span class="material-symbols-rounded">open_in_new</span></a
             >
+              Nos formations
+              <span class="material-icons-round">open_in_new</span>
+            </a>
           </li>
           <li><a href="contact.html">Contacter</a></li>
           <li><a href="faq.html">F.A.Q</a></li>
@@ -53,7 +127,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <span class="material-symbols-rounded">person</span>
+            <span class="material-icons-round">person</span>
           </button>
           <ul class="dropdown-menu">
             <li class="profil-head">
@@ -74,7 +148,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <h1>A propos</h1>
       <div class="dawan-presentation">
@@ -121,135 +194,157 @@
       <section class="dawan-avis">
         <h2>Avis des utilisateurs sur les formations After Effects</h2>
 
-        <div id="testimonialCarousel" class="carousel slide">
+        <div
+          id="testimonialCarousel"
+          class="carousel slide testimonial-carousel"
+          data-bs-ride="false"
+        >
           <div class="carousel-inner">
-            <!-- ITEM 1 -->
+            <!-- ===== ITEM 1 ===== -->
             <div class="carousel-item active">
-              <div
-                class="testimonial-card align-items-center p-4 rounded text-center"
-              >
-                <div
-                  class="d-flex align-items-center me-4 mb-4 justify-content-center"
-                >
-                  <div
-                    src="https://via.placeholder.com/90"
-                    class="rounded-circle me-4 avatar-placeholder"
-                    alt="Avatar placeholder"
-                  ></div>
+              <div class="testimonial-wrapper">
+                <div class="testimonial-profile">
+                  <span class="material-icons-round testimonial-profile-icon"
+                    >account_circle</span
+                  >
+
                   <div>
-                    <h5 class="fw-bold mb-0">Emily Jeff</h5>
-                    <p class="text-muted mb-1">Lorem, ipsum dolor.</p>
-                  </div>
-                </div>
-                <div class="flex-grow-1 text-center">
-                  <div class="text-warning mb-4">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                    <h3 class="testimonial-name">Emily Jeff</h3>
+                    <p class="testimonial-role">CEO – TheWebagency</p>
                   </div>
 
-                  <p class="avis-text mb-0">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Cum enim ipsam harum.
+                  <div class="testimonial-rating">
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star_border</span
+                    >
+                  </div>
+                </div>
+
+                <div class="testimonial-comment">
+                  <p class="testimonial-comment-text">
+                    Ten the hastened steepest feelings pleasant few surprise
+                    property. An brother he do colonel against.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- ITEM 2 -->
+            <!-- ===== ITEM 2 ===== -->
             <div class="carousel-item">
-              <div
-                class="testimonial-card align-items-center p-4 rounded text-center"
-              >
-                <div
-                  class="d-flex align-items-center me-4 mb-4 justify-content-center"
-                >
-                  <div
-                    src="https://via.placeholder.com/90"
-                    class="rounded-circle me-4 avatar-placeholder"
-                    alt="Avatar placeholder"
-                  ></div>
+              <div class="testimonial-wrapper">
+                <div class="testimonial-profile">
+                  <span class="material-icons-round testimonial-profile-icon"
+                    >account_circle</span
+                  >
+
                   <div>
-                    <h5 class="fw-bold mb-0">Sarah Miles</h5>
-                    <p class="text-muted mb-1">Lorem, ipsum dolor.</p>
-                  </div>
-                </div>
-                <div class="flex-grow-1 text-center">
-                  <div class="text-warning mb-4">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
+                    <h3 class="testimonial-name">John Doe</h3>
+                    <p class="testimonial-role">CTO – TechCorp</p>
                   </div>
 
-                  <p class="avis-text mb-0">
-                    Lorem ipsum dolor sit amet consectetur.
+                  <div class="testimonial-rating">
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star_half</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star_border</span
+                    >
+                  </div>
+                </div>
+
+                <div class="testimonial-comment">
+                  <p class="testimonial-comment-text">
+                    Excellent collaboration, communication fluide et résultats
+                    au-dessus des attentes.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- ITEM 3 -->
+            <!-- ===== ITEM 3 ===== -->
             <div class="carousel-item">
-              <div
-                class="testimonial-card align-items-center p-4 rounded text-center"
-              >
-                <div
-                  class="d-flex align-items-center me-4 mb-4 justify-content-center"
-                >
-                  <div
-                    src="https://via.placeholder.com/90"
-                    class="rounded-circle me-4 avatar-placeholder"
-                    alt="Avatar placeholder"
-                  ></div>
+              <div class="testimonial-wrapper">
+                <div class="testimonial-profile">
+                  <span class="material-icons-round testimonial-profile-icon"
+                    >account_circle</span
+                  >
+
                   <div>
-                    <h5 class="fw-bold mb-0">John Doe</h5>
-                    <p class="text-muted mb-1">Lorem, ipsum dolor.</p>
-                  </div>
-                </div>
-                <div class="flex-grow-1 text-center">
-                  <div class="text-warning mb-4">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
+                    <h3 class="testimonial-name">Sarah Lee</h3>
+                    <p class="testimonial-role">Marketing Lead – Brandify</p>
                   </div>
 
-                  <p class="avis-text mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptas architecto deleniti magnam voluptatibus ex ducimus
-                    quidem eius aspernatur, tenetur id.
+                  <div class="testimonial-rating">
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                    <span class="material-icons-round testimonial-star"
+                      >star</span
+                    >
+                  </div>
+                </div>
+
+                <div class="testimonial-comment">
+                  <p class="testimonial-comment-text">
+                    Une équipe talentueuse et très professionnelle. Je
+                    recommande vivement.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- ARROWS -->
+          <!-- ===== FLECHES FIXES ET VISIBLES ===== -->
           <button
-            class="carousel-control-prev"
+            class="carousel-control-prev testimonial-nav-prev"
             type="button"
             data-bs-target="#testimonialCarousel"
             data-bs-slide="prev"
           >
-            <span class="carousel-arrow bg-white shadow rounded-circle">
-              <i class="bi bi-chevron-left text-dark"></i>
-            </span>
+            <span class="material-icons-round testimonial-nav-icon"
+              >chevron_left</span
+            >
           </button>
 
           <button
-            class="carousel-control-next"
+            class="carousel-control-next testimonial-nav-next"
             type="button"
             data-bs-target="#testimonialCarousel"
             data-bs-slide="next"
           >
-            <span class="carousel-arrow bg-white shadow rounded-circle">
-              <i class="bi bi-chevron-right text-dark"></i>
-            </span>
+            <span class="material-icons-round testimonial-nav-icon"
+              >chevron_right</span
+            >
           </button>
         </div>
       </section>

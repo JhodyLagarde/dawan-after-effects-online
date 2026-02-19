@@ -6369,13 +6369,13 @@ fieldset:disabled .btn {
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  /*   top: 0;
+  bottom: 0; */
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  /*  width: 15%; */
   padding: 0;
   color: #fff;
   text-align: center;
@@ -6383,7 +6383,7 @@ fieldset:disabled .btn {
   filter: var(--bs-carousel-control-icon-filter);
   border: 0;
   opacity: 0.5;
-  /* transition: opacity 0.15s ease; */
+  transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -6401,14 +6401,14 @@ fieldset:disabled .btn {
   opacity: 0.9;
 }
 
-.carousel-control-prev {
+/* .carousel-control-prev {
   left: -100px;
 }
 
 .carousel-control-next {
   right: -100px;
 }
-
+ */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;

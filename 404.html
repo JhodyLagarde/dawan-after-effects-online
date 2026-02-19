@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>After Effects Online</title>
     <link rel="stylesheet" href="assets/styles/index.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
     <script
@@ -15,9 +15,86 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/script/script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="mobile-header" class="topbar-wrapper" aria-hidden="false">
+      <!-- Barre supérieure -->
+      <div
+        class="topbar d-flex align-items-center justify-content-between position-fixed top-0 start-0 w-100"
+      >
+        <a href="index.html" class="logo-link">
+          <img
+            src="assets/images/logo-after-affects-online.svg"
+            alt="Logo After Effects Online"
+            class="logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuTop"
+        >
+          <span class="material-icons-round">menu</span>
+        </button>
+      </div>
+
+      <!-- Menu Offcanvas -->
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="menuTop">
+        <div class="offcanvas-body">
+          <div class="menu-content">
+            <!-- Collapse Profil -->
+            <div class="profile-wrapper">
+              <div class="profile-container">
+                <button
+                  class="profile-collapse-btn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#profileCollapse"
+                >
+                  <span class="material-icons-round profile-icon"
+                    >account_circle</span
+                  >
+                  <span class="profile-name">John Doe</span>
+                </button>
+
+                <div id="profileCollapse" class="collapse">
+                  <div class="collapse-profile-content">
+                    <a href="profil.html">Mon profil</a>
+                    <a href="historique.html">Historique</a>
+                    <a href="#">Déconnexion</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Liste de navigation -->
+            <div class="menu-list">
+              <a href="abonnements.html">Abonnement</a>
+              <a href="chapitres.html">E-learning</a>
+
+              <a
+                href="https://www.dawan.fr/formations/audiovisuel/after-effects"
+                target="_blank"
+              >
+                Nos formations
+                <span class="material-icons-round external-icon"
+                  >open_in_new</span
+                >
+              </a>
+
+              <a href="contact.html">Contacter</a>
+              <a href="faq.html">F.A.Q</a>
+              <a href="apropos.html">À propos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HEADER DESKTOP -->
+    <header id="desktop-header" aria-hidden="true">
       <a class="logo" href="index.html">
         <img
           src="/assets/images/logo-after-affects-online.svg"
@@ -33,9 +110,10 @@
             <a
               href="https://www.dawan.fr/formations/audiovisuel/after-effects"
               target="_blank"
-              >Nos formations
-              <span class="material-symbols-rounded">open_in_new</span></a
             >
+              Nos formations
+              <span class="material-icons-round">open_in_new</span>
+            </a>
           </li>
           <li><a href="contact.html">Contacter</a></li>
           <li><a href="faq.html">F.A.Q</a></li>
@@ -49,7 +127,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <span class="material-symbols-rounded">person</span>
+            <span class="material-icons-round">person</span>
           </button>
           <ul class="dropdown-menu">
             <li class="profil-head">
@@ -70,7 +148,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <section class="error-page">
         <div class="error-page__message">
