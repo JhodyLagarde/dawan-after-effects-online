@@ -435,9 +435,9 @@ kbd kbd {
   font-size: 1em;
 }
 
-figure {
+/* figure {
   margin: 0 0 1rem;
-}
+} */
 
 img,
 svg {
