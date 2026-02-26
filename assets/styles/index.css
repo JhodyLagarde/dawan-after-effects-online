@@ -1,6 +1,7 @@
 /* Global Styles */
 
-body {
+body,
+main {
   background-color: #f5f5ff;
   margin: 0;
   font-family: lato, sans-serif;
@@ -36,6 +37,8 @@ h1 {
   font-weight: 700;
   text-align: center;
   padding: 84px 124px 64px 124px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 span {
@@ -347,6 +350,8 @@ footer {
   gap: 48px;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 footer .info-contact {
@@ -434,16 +439,22 @@ footer p {
 }
 
 .error-page {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 86px;
-  padding: 86px 0 64px 0;
+  padding: 86px 24px 64px 24px;
+}
+
+.error-image img {
+  height: 500px;
 }
 
 .error-page__message {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -461,6 +472,8 @@ footer p {
 }
 
 .error-page__back {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -538,6 +551,7 @@ footer p {
 }
 
 .videos-e-learning {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -546,11 +560,13 @@ footer p {
 }
 
 .content-e-learning {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
   width: 100%;
+  z-index: 1;
 }
 
 .thumbnails-videos {
@@ -563,16 +579,27 @@ footer p {
   margin: 0;
 }
 
+.e-learning-image {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .avantages-e-learning {
+  position: relative;
   background-color: rgba(122, 122, 204, 0.2);
   padding: 64px 124px;
 }
 
 .content-avantage {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
+  z-index: 1;
 }
 
 .avantages-cards-container {
@@ -597,6 +624,8 @@ footer p {
   border: 1px solid rgba(0, 0, 91, 0.2);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 91, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .avantage-card h3 {
@@ -610,7 +639,15 @@ footer p {
   font-weight: 400;
 }
 
+.avantage-image {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .abonnements-plans {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -619,11 +656,21 @@ footer p {
 }
 
 .content-abonnements {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
   width: 100%;
+  z-index: 1;
+}
+
+.abonnements-image {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Carrousel abonnements */
@@ -752,6 +799,7 @@ footer p {
 }
 
 .formations {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -766,6 +814,8 @@ footer p {
   align-items: center;
   gap: 48px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .content-formations ul {
@@ -805,9 +855,32 @@ footer p {
   gap: 16px;
 }
 
+.formations-image {
+  position: absolute;
+  z-index: 0;
+  right: 0%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.profil-image,
+.apropos-image,
+.faq-image,
+.chapitres-image,
+.error-image,
+.video-image,
+.sub-image,
+.episodes-image {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Forms CSS */
 
 .form-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -816,6 +889,8 @@ footer p {
 }
 
 .form {
+  position: relative;
+  z-index: 1;
   padding: 34px 16px;
   display: flex;
   flex-direction: column;
@@ -937,6 +1012,14 @@ footer p {
   margin-bottom: 64px;
 }
 
+.form-image {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .consulter-abo {
   padding: 24px 0 14px 0;
   font-size: 16px;
@@ -955,6 +1038,7 @@ footer p {
   justify-content: center;
   align-items: center;
   margin: 64px 0 86px 0;
+  position: relative;
 }
 
 .chapitres-cards-container1,
@@ -964,6 +1048,8 @@ footer p {
   align-items: center;
   gap: 32px;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .article-chapitre-card {
@@ -1070,6 +1156,7 @@ figure {
 /*Episodes CSS */
 
 .episode-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1079,6 +1166,8 @@ figure {
 }
 
 .episode1 {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1131,6 +1220,8 @@ figure {
 }
 
 .episodes-list {
+  position: relative;
+  z-index: 1;
   width: 100%;
 }
 
@@ -1188,13 +1279,19 @@ figure {
   line-height: 20px;
 }
 
-/* Profils CSS */
+/* Profil CSS */
 
 p {
   margin: 0;
 }
 
+.profile-main {
+  position: relative;
+}
+
 .profile-section {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1258,6 +1355,8 @@ p {
 }
 
 .recently-watched-section {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1291,6 +1390,7 @@ p {
 /* Vidéo CSS */
 
 .video {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1300,6 +1400,8 @@ p {
 }
 
 .section-video {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1322,6 +1424,8 @@ p {
 }
 
 .section-retranscription {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1391,6 +1495,7 @@ p {
 
 .subscription-wrapper {
   position: relative;
+  z-index: 1;
   width: 280px;
 }
 
@@ -1519,6 +1624,7 @@ p {
 /* FAQ */
 
 .accordion {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1527,6 +1633,8 @@ p {
 }
 
 .accordion-item {
+  position: relative;
+  z-index: 1;
   width: 70%;
   background-color: #dfdfff;
 }
@@ -1544,6 +1652,10 @@ p {
 
 /* A propos */
 
+.apropos-main {
+  position: relative;
+}
+
 .logo-dawan {
   display: flex;
   flex-direction: column-reverse;
@@ -1557,6 +1669,8 @@ p {
 }
 
 .dawan-presentation {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1605,6 +1719,8 @@ p {
 }
 
 .dawan-avis {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1854,6 +1970,19 @@ p {
   h1 {
     padding: 124px 24px 64px 24px;
   }
+  .profil-image,
+  .apropos-image,
+  .faq-image,
+  .chapitres-image,
+  .error-image,
+  .video-image,
+  .sub-image,
+  .formations-image,
+  .episodes-image,
+  .abonnements-image,
+  .avantage-image {
+    display: none;
+  }
   .topbar {
     width: 100%;
     padding: 8px 16px;
@@ -1901,6 +2030,7 @@ p {
     max-width: 340px;
   }
   /* apropos */
+
   .dawan-about {
     padding: 64px 24px;
   }
