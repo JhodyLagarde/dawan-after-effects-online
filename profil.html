@@ -153,6 +153,12 @@
 
     <main class="profile-main">
       <h1>Profil</h1>
+      <nav aria-label="breadcrumb" class="breadcrumb-navigation">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Profil</li>
+        </ol>
+      </nav>
       <section class="profile-section">
         <div class="profile-info-container">
           <div class="placeholder-img-profile"></div>
@@ -164,6 +170,10 @@
               class="btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              role="button"
+              tabindex="0"
+              aria-label="Bouton"
+              aria-details="Ouverture de la modal de changement d'information du profil utilisateur"
             >
               edit
             </span>
@@ -234,9 +244,9 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
+              <p class="modal-title .fs-3" id="exampleModalLabel">
                 Modifier mon profil
-              </h1>
+              </p>
               <button
                 type="button"
                 class="btn-close"
@@ -245,7 +255,7 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form action="#" method="post">
+              <form class="form form-modal" action="#" method="post">
                 <div class="container-input-form">
                   <label class="form-label" for="nom">Nom</label>
                   <input type="text" id="nom" name="nom" />
