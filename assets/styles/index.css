@@ -1229,7 +1229,7 @@ figure {
   margin: 0;
 }
 
-.video-player-episode figcaption {
+.player-video-titre {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -1332,7 +1332,7 @@ p {
 .placeholder-img-profile {
   width: 100px;
   height: 100px;
-  background-color: rgba(0, 0, 91, 0.1);
+  background-color: #00005b;
   border-radius: 100px;
   margin-bottom: 32px;
 }
@@ -1502,7 +1502,7 @@ p {
   width: 72px;
   height: 72px;
   border-radius: 100px;
-  background-color: #1c192c;
+  background-color: #00005b;
 }
 
 .nom-formateur {
@@ -2277,8 +2277,8 @@ p {
     flex-direction: column;
     gap: 8px;
   }
-  .video-player-episode figure figcaption {
-    font-size: 16px;
+  .player-video-titre {
+    font-size: 22px;
   }
   .titre-section-list {
     font-size: 16px;
