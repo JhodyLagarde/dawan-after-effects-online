@@ -10,11 +10,11 @@ main {
 
 ::selection {
   color: #f5f5ff;
-  background-color: #7a7acc;
+  background-color: #5c5c99;
 }
 
 :focus {
-  outline: solid 2px #7a7acc;
+  outline: solid 2px #5c5c99;
   border-radius: 8px;
 }
 
@@ -52,7 +52,7 @@ h1 {
 }
 
 .hero h1 span {
-  color: #7a7acc;
+  color: #5c5c99;
   font-weight: 900;
 }
 
@@ -73,19 +73,23 @@ hr {
 
 /* Boutons */
 
-.button {
+.button,
+.button-inactive {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 4px;
   padding: 8px 32px;
-  background-color: #1c192c;
-  border: #1c192c 2px solid;
   border-radius: 24px;
-  color: #f5f5ff;
   font-size: 20px;
   cursor: pointer;
   z-index: 1;
+}
+
+.button {
+  background-color: #1c192c;
+  border: #1c192c 2px solid;
+  color: #f5f5ff;
 }
 
 .button span {
@@ -95,22 +99,18 @@ hr {
 .button:hover {
   background-color: #f5f5ff;
   color: #1c192c;
-  border: #1c192c 2px solid;
 }
 
 .button-inactive {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 4px;
-  padding: 8px 32px;
   background-color: #686868;
   border: #686868 2px solid;
-  border-radius: 24px;
   color: #f5f5ff;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 1;
+}
+
+.button-inactive:hover {
+  background-color: #f5f5ff;
+  color: #474747;
+  border: #474747 2px solid;
 }
 
 .button-inactive:hover {
@@ -149,7 +149,6 @@ nav {
   font-size: 20px;
   font-weight: 500;
   line-height: 100%;
-  text-wrap: nowrap;
 }
 
 .menu li a {
@@ -346,7 +345,7 @@ nav {
   flex-direction: column;
   align-items: center;
   background-color: rgba(122, 122, 204, 0.2);
-  padding: 0px 124px 64px 124px;
+  padding: 64px 124px 64px 124px;
   gap: 64px;
 }
 
@@ -444,10 +443,6 @@ footer p {
   font-weight: 500;
 }
 
-.contact {
-  padding-top: 64px;
-}
-
 .error-page {
   position: relative;
   display: flex;
@@ -536,7 +531,7 @@ footer p {
 }
 
 .hero p span {
-  color: #7a7acc;
+  color: #5c5c99;
   font-weight: 800;
 }
 
@@ -907,7 +902,6 @@ footer p {
   gap: 24px;
   width: 579px;
   border-radius: 8px;
-  background-color: #f9f9f9;
   border: 1px solid rgba(0, 0, 91, 0.2);
   background: linear-gradient(145deg, #f5f5ff 20.64%, #b2b2ff 135.45%);
   box-shadow:
@@ -987,10 +981,6 @@ footer p {
   font-weight: 500;
 }
 
-.form-check-input {
-  margin: 0;
-}
-
 .form-check-label {
   display: inline-block;
   float: none;
@@ -1004,7 +994,7 @@ footer p {
   line-height: 14px;
 }
 
-.form-section a {
+.form-section .lien {
   text-decoration: underline;
 }
 
@@ -1012,7 +1002,6 @@ footer p {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 48px;
 }
 
 .spec a {
@@ -1049,6 +1038,18 @@ footer p {
 
 .form-check-input {
   margin: 0;
+}
+
+.confirmation {
+  align-items: center;
+}
+
+.icone-check {
+  height: 100px;
+}
+
+.confirmation-body {
+  text-align: center;
 }
 
 /* Chapitre CSS */
@@ -1147,32 +1148,26 @@ figure {
   margin-right: 8px;
 }
 
-.progress-bar-chapitre1 {
-  width: 55%;
+.progress-bar-chapitre1,
+.progress-bar-chapitre2,
+.progress-bar-chapitre3,
+.progress-bar-chapitre4 {
   height: 8px;
   background-color: #1c192c;
   border-radius: 4px;
+}
+
+.progress-bar-chapitre1 {
+  width: 55%;
 }
 
 .progress-bar-chapitre2 {
   width: 40%;
-  height: 8px;
-  background-color: #1c192c;
-  border-radius: 4px;
 }
 
-.progress-bar-chapitre3 {
-  width: 0%;
-  height: 8px;
-  background-color: #1c192c;
-  border-radius: 4px;
-}
-
+.progress-bar-chapitre3,
 .progress-bar-chapitre4 {
   width: 0%;
-  height: 8px;
-  background-color: #1c192c;
-  border-radius: 4px;
 }
 
 /*Episodes CSS */
@@ -1364,6 +1359,11 @@ p {
   justify-content: space-between;
 }
 
+.modif-mdp {
+  text-decoration: underline;
+  padding: 8px;
+}
+
 .modal-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -1376,6 +1376,12 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.annuler-abo {
+  padding: 8px;
+  color: red;
+  text-decoration: underline;
 }
 
 .recently-watched-section {
@@ -1926,10 +1932,6 @@ p {
     padding: 20px 24px;
   }
 
-  .logo {
-    height: 32px;
-  }
-
   h1 {
     font-size: 32px;
     padding: 64px 24px 64px 24px;
@@ -1985,10 +1987,6 @@ p {
     display: none !important;
     visibility: hidden !important;
     pointer-events: none !important;
-  }
-
-  #mobile-header[aria-hidden="false"] {
-    aria-hidden: true;
   }
 }
 
@@ -2239,6 +2237,10 @@ p {
   }
   .contact {
     padding: 64px 24px;
+  }
+  /* form */
+  .form p {
+    font-size: 14px;
   }
   /* chapitres */
   .chapitres-cards {
