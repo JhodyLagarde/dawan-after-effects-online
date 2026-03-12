@@ -1380,7 +1380,7 @@ p {
 
 .annuler-abo {
   padding: 8px;
-  color: red;
+  color: #c00000;
   text-decoration: underline;
 }
 
