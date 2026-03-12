@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>After Effects Online</title>
-    <link rel="stylesheet" href="assets/styles/index.css" />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
@@ -15,7 +15,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/script/script.js" defer></script>
+    <script src="../assets/script/script.js" defer></script>
   </head>
   <body>
     <header id="mobile-header" class="topbar-wrapper" aria-hidden="false">
@@ -25,7 +25,7 @@
       >
         <a href="index.html" class="logo-link">
           <img
-            src="assets/images/logo-after-affects-online.svg"
+            src="../assets/images/logo-after-affects-online.svg"
             alt="Logo After Effects Online"
             class="logo"
           />
@@ -97,7 +97,7 @@
     <header id="desktop-header" aria-hidden="true">
       <a class="logo" href="index.html">
         <img
-          src="/assets/images/logo-after-affects-online.svg"
+          src="../assets/images/logo-after-affects-online.svg"
           alt="Logo After Effects Online"
         />
       </a>
@@ -151,55 +151,86 @@
       </nav>
     </header>
     <main>
-      <h1>Connexion</h1>
+      <h1>Historique</h1>
       <nav aria-label="breadcrumb" class="breadcrumb-navigation">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Connexion</li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="profil.html">Profil</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Historique</li>
         </ol>
       </nav>
-      <section class="form-section connexion-section">
-        <form class="form" action="#" method="post">
-          <div class="container-input-form">
-            <label class="form-label" for="email">Identifiant</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div class="container-input-form">
-            <label class="form-label" for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required />
-            <a href="mdpoublie.html" class="mdp-oublie lien"
-              >Mot de passe oublié</a
-            >
-          </div>
-
-          <button type="submit">Connexion</button>
-
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="defaultCheck1"
-            />
-            <label class="form-check-label" for="defaultCheck1">
-              Se souvenir de moi
-            </label>
-          </div>
-        </form>
-        <p class="inscription-link">
-          Vous n'avez pas encore de compte ?
-          <a href="inscription.html" class="lien">Inscrivez-vous ici</a>
-        </p>
-        <div class="form-image">
-          <img
-            src="assets/images/bg-forms.svg"
-            alt="image d'arrière-plan"
-            aria-hidden="true"
-          />
-        </div>
+      <section>
+        <ul class="history-list">
+          <li class="history-list-item">
+            <a class="history-list-link" href="video.html">
+              <img
+                src="../assets/images/player-video-minia-historique.png"
+                alt="Placeholder miniature vidéo hisorique"
+              />
+              <div class="history-item-content">
+                <h3 class="history-item-title">Chapitre 1 : Vidéo 2</h3>
+                <p class="history-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores esse eveniet alias animi amet odit non nam error,
+                  recusandae optio! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Quas temporibus amet ea minima nostrum iusto
+                  vel consequatur nulla eum sapiente? Minus saepe eveniet
+                  corporis temporibus deleniti ipsum, id architecto facilis?
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Error laborum harum eos repellendus consequatur accusantium
+                  explicabo architecto? Saepe quis nobis vero delectus tempore
+                  voluptatem rem eaque, eos error officia maiores, molestias
+                  veniam. Quae dolore consectetur, itaque, temporibus excepturi
+                  veritatis eligendi ipsam saepe nostrum suscipit pariatur illum
+                  explicabo ut repudiandae ullam eaque vel architecto!
+                  Voluptatum deserunt labore fugiat aperiam facilis. Eum, iste
+                  eius cumque laboriosam perferendis modi numquam odit inventore
+                  voluptas repellat aliquid laborum iusto rerum est aspernatur
+                  vero amet doloremque doloribus. Dicta tempora ullam
+                  accusantium, incidunt nihil maiores facere hic!
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="history-list-item">
+            <a class="history-list-link" href="video.html">
+              <img
+                src="../assets/images/player-video-minia-historique.png"
+                alt="Placeholder miniature vidéo hisorique"
+              />
+              <div class="history-item-content">
+                <h3 class="history-item-title">Chapitre 1 : Vidéo 2</h3>
+                <p class="history-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores esse eveniet alias animi amet odit non nam error,
+                  recusandae optio!
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="history-list-item">
+            <a class="history-list-link" href="video.html">
+              <img
+                src="../assets/images/player-video-minia-historique.png"
+                alt="Placeholder miniature vidéo hisorique"
+              />
+              <div class="history-item-content">
+                <h3 class="history-item-title">Chapitre 1 : Vidéo 2</h3>
+                <p class="history-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores esse eveniet alias animi amet odit non nam error,
+                  recusandae optio!
+                </p>
+              </div>
+            </a>
+          </li>
+          <!-- Ajoutez plus d'éléments d'historique si nécessaire -->
+        </ul>
       </section>
     </main>
+
     <footer>
       <div class="info-contact">
         <ul>
@@ -210,29 +241,35 @@
       <div class="reseaux-sociaux">
         <div class="logo-footer">
           <img
-            src="assets/images/logo-after-affects-online.svg"
+            src="../assets/images/logo-after-affects-online.svg"
             alt="logo After Effects Online"
           />
         </div>
         <ul>
           <li>
             <a href="https://www.youtube.com/user/dawantv" target="_blank"
-              ><img src="assets/images/youtube-icon.svg" alt="Icon Youtube"
+              ><img src="../assets/images/youtube-icon.svg" alt="Icon Youtube"
             /></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/company/dawan" target="_blank"
-              ><img src="assets/images/linkedin-icon.svg" alt="Icon Linkedin"
+              ><img
+                src="../assets/images/linkedin-icon.svg"
+                alt="Icon Linkedin"
             /></a>
           </li>
           <li>
             <a href="https://fr-fr.facebook.com/DawanFrance" target="_blank"
-              ><img src="assets/images/facebook-icon.svg" alt="Icon Facebook"
+              ><img
+                src="../assets/images/facebook-icon.svg"
+                alt="Icon Facebook"
             /></a>
           </li>
           <li>
             <a href="https://www.instagram.com/dawanfrance/" target="_blank"
-              ><img src="assets/images/instagram-icon.svg" alt="Icon Instagram"
+              ><img
+                src="../assets/images/instagram-icon.svg"
+                alt="Icon Instagram"
             /></a>
           </li>
         </ul>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>After Effects Online</title>
-    <link rel="stylesheet" href="assets/styles/index.css" />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
@@ -15,7 +15,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/script/script.js" defer></script>
+    <script src="../assets/script/script.js" defer></script>
   </head>
   <body>
     <header id="mobile-header" class="topbar-wrapper" aria-hidden="false">
@@ -25,7 +25,7 @@
       >
         <a href="index.html" class="logo-link">
           <img
-            src="assets/images/logo-after-affects-online.svg"
+            src="../assets/images/logo-after-affects-online.svg"
             alt="Logo After Effects Online"
             class="logo"
           />
@@ -97,7 +97,7 @@
     <header id="desktop-header" aria-hidden="true">
       <a class="logo" href="index.html">
         <img
-          src="/assets/images/logo-after-affects-online.svg"
+          src="../assets/images/logo-after-affects-online.svg"
           alt="Logo After Effects Online"
         />
       </a>
@@ -151,30 +151,130 @@
       </nav>
     </header>
     <main>
-      <section class="error-page">
-        <div class="error-page__message">
-          <h1 class="error-page__message-title">404</h1>
-          <h2 class="error-page__message-description">
-            La page que vous recherchez n'existe pas.
-          </h2>
+      <h1>Chapitres</h1>
+      <nav aria-label="breadcrumb" class="breadcrumb-navigation">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Chapitres</li>
+        </ol>
+      </nav>
+      <section class="chapitres-cards">
+        <div class="chapitres-cards-container1">
+          <a href="chapitre1.html">
+            <article class="article-chapitre-card">
+              <h2>Chapitre 1</h2>
+              <p>18 Vidéos</p>
+              <!-- Placeholder player de la vidéo en cours / 1er vidéo du chapitre -->
+              <figure class="card-chapitre-placeholder-player">
+                <img
+                  class="player-chapitre"
+                  src="../assets/images/player-vidéo-chapitres.png"
+                  alt="placeholder player vidéo chapitre 1"
+                />
+                <figcaption class="player-button-chapitre">
+                  <img
+                    src="../assets/images/bouton-play-chapitre.svg"
+                    alt="Bouton play chapitre 1"
+                  />
+                </figcaption>
+              </figure>
+              <div class="progress-chapitre">
+                <div class="progress-bar-container-chapitre">
+                  <div class="progress-bar-chapitre1"></div>
+                </div>
+                <span>55%</span>
+              </div>
+            </article>
+          </a>
+          <a href="chapitre2.html">
+            <article class="article-chapitre-card">
+              <h2>Chapitre 2</h2>
+              <p>12 Vidéos</p>
+              <!-- Placeholder player de la vidéo en cours / 1er vidéo du chapitre -->
+              <figure class="card-chapitre-placeholder-player">
+                <img
+                  class="player-chapitre"
+                  src="../assets/images/player-vidéo-chapitres.png"
+                  alt="placeholder player vidéo chapitre 1"
+                />
+                <figcaption class="player-button-chapitre">
+                  <img
+                    src="../assets/images/bouton-play-chapitre.svg"
+                    alt="Bouton play chapitre 1"
+                  />
+                </figcaption>
+              </figure>
+              <div class="progress-chapitre">
+                <div class="progress-bar-container-chapitre">
+                  <div class="progress-bar-chapitre2"></div>
+                </div>
+                <span>40%</span>
+              </div>
+            </article>
+          </a>
         </div>
-        <div class="error-page__back">
-          <p class="error-page__back-description">
-            Retourner a la page d'accueil :
-          </p>
-          <a class="error-page__back-link" href="accueil.html">Accueil</a>
+        <div class="chapitres-cards-container2">
+          <a href="chapitre3.html">
+            <article class="article-chapitre-card">
+              <h2>Chapitre 3</h2>
+              <p>11 Vidéos</p>
+              <!-- Placeholder player de la vidéo en cours / 1er vidéo du chapitre -->
+              <figure class="card-chapitre-placeholder-player">
+                <img
+                  class="player-chapitre"
+                  src="../assets/images/player-vidéo-chapitres.png"
+                  alt="placeholder player vidéo chapitre 1"
+                />
+                <figcaption class="player-button-chapitre">
+                  <img
+                    src="../assets/images/bouton-play-chapitre.svg"
+                    alt="Bouton play chapitre 1"
+                  />
+                </figcaption>
+              </figure>
+              <div class="progress-chapitre">
+                <div class="progress-bar-container-chapitre">
+                  <div class="progress-bar-chapitre3"></div>
+                </div>
+                <span>0%</span>
+              </div>
+            </article>
+          </a>
+          <a href="chapitre3.html">
+            <article class="article-chapitre-card">
+              <h2>Chapitre 4</h2>
+              <p>14 Vidéos</p>
+              <!-- Placeholder player de la vidéo en cours / 1er vidéo du chapitre -->
+              <figure class="card-chapitre-placeholder-player">
+                <img
+                  class="player-chapitre"
+                  src="../assets/images/player-vidéo-chapitres.png"
+                  alt="placeholder player vidéo chapitre 1"
+                />
+                <figcaption class="player-button-chapitre">
+                  <img
+                    src="../assets/images/bouton-play-chapitre.svg"
+                    alt="Bouton play chapitre 1"
+                  />
+                </figcaption>
+              </figure>
+              <div class="progress-chapitre">
+                <div class="progress-bar-container-chapitre">
+                  <div class="progress-bar-chapitre4"></div>
+                </div>
+                <span>0%</span>
+              </div>
+            </article>
+          </a>
         </div>
-        <div class="error-image">
+        <a href="abonnements.html" class="button">S'abonner</a>
+        <div class="chapitres-image">
           <img
-            src="assets/images/bg-ae.svg"
+            src="../assets/images/bg-body2.svg"
             alt="image d'arrière-plan"
             aria-hidden="true"
           />
         </div>
-      </section>
-      <section class="contact">
-        <h2>Vous avec une question ?</h2>
-        <a href="contact.html" class="button">Nous contacter</a>
       </section>
     </main>
 
@@ -188,29 +288,35 @@
       <div class="reseaux-sociaux">
         <div class="logo-footer">
           <img
-            src="assets/images/logo-after-affects-online.svg"
+            src="../assets/images/logo-after-affects-online.svg"
             alt="logo After Effects Online"
           />
         </div>
         <ul>
           <li>
             <a href="https://www.youtube.com/user/dawantv" target="_blank"
-              ><img src="assets/images/youtube-icon.svg" alt="Icon Youtube"
+              ><img src="../assets/images/youtube-icon.svg" alt="Icon Youtube"
             /></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/company/dawan" target="_blank"
-              ><img src="assets/images/linkedin-icon.svg" alt="Icon Linkedin"
+              ><img
+                src="../assets/images/linkedin-icon.svg"
+                alt="Icon Linkedin"
             /></a>
           </li>
           <li>
             <a href="https://fr-fr.facebook.com/DawanFrance" target="_blank"
-              ><img src="assets/images/facebook-icon.svg" alt="Icon Facebook"
+              ><img
+                src="../assets/images/facebook-icon.svg"
+                alt="Icon Facebook"
             /></a>
           </li>
           <li>
             <a href="https://www.instagram.com/dawanfrance/" target="_blank"
-              ><img src="assets/images/instagram-icon.svg" alt="Icon Instagram"
+              ><img
+                src="../assets/images/instagram-icon.svg"
+                alt="Icon Instagram"
             /></a>
           </li>
         </ul>

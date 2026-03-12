@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>After Effects Online</title>
-    <link rel="stylesheet" href="assets/styles/index.css" />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
@@ -15,7 +15,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/script/script.js" defer></script>
+    <script src="../assets/script/script.js" defer></script>
   </head>
   <body>
     <header id="mobile-header" class="topbar-wrapper" aria-hidden="false">
@@ -25,7 +25,7 @@
       >
         <a href="index.html" class="logo-link">
           <img
-            src="assets/images/logo-after-affects-online.svg"
+            src="../assets/images/logo-after-affects-online.svg"
             alt="Logo After Effects Online"
             class="logo"
           />
@@ -97,7 +97,7 @@
     <header id="desktop-header" aria-hidden="true">
       <a class="logo" href="index.html">
         <img
-          src="/assets/images/logo-after-affects-online.svg"
+          src="../assets/images/logo-after-affects-online.svg"
           alt="Logo After Effects Online"
         />
       </a>
@@ -151,52 +151,88 @@
       </nav>
     </header>
     <main>
-      <h1>Modifier mot de passe</h1>
+      <!-- Placeholder titre -->
+      <h1>Titre de vidéo</h1>
       <nav aria-label="breadcrumb" class="breadcrumb-navigation">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-          <li class="breadcrumb-item">
-            <a href="connexion.html">Connexion</a>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="chapitres.html">Chapitres</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Modifier mot de passe
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="chapitre1.html">Episodes</a>
           </li>
+          <li class="breadcrumb-item active" aria-current="page">Vidéo</li>
         </ol>
       </nav>
-      <section class="form-section connexion-section">
-        <form class="form" action="#" method="post">
-          <div class="container-input-form">
-            <label class="form-label" for="email">Nouveau mot de passe</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div class="container-input-form">
-            <label class="form-label" for="password"
-              >Confirmer le mot de passe</label
-            >
-            <input type="password" id="password" name="password" required />
-          </div>
-          <div class="spec">
-            <p class="title-spec">Spécifications du mots de passe</p>
-            <ul>
-              <li>Au moins 12 caractères</li>
-              <li>Un caractères en majuscule</li>
-              <li>Un caractères en minuscule</li>
-              <li>Un chiffre</li>
-              <li>Un caractère spécial ($, ?, ...)</li>
-            </ul>
-          </div>
-          <button type="submit">Modifier</button>
-        </form>
-        <div class="form-image">
+      <div class="video">
+        <section class="section-video">
           <img
-            src="assets/images/bg-forms.svg"
+            class="placeholder-player"
+            src="../assets/images/player-vidéo-vidéo.png"
+            alt="Player vidéo placeholder"
+          />
+          <p>Cette vidéo est réservée aux personnes abonnées</p>
+          <div class="video-nav">
+            <a class="button" href="#">Vidéo précédente</a>
+            <a class="button" href="#">Vidéo suivante</a>
+          </div>
+        </section>
+        <section class="section-retranscription">
+          <div class="retranscription">
+            <h2 class="retranscription-title">Retranscription :</h2>
+            <p class="retranscription-txt-locked">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              sequi eveniet dolorum placeat architecto, magnam possimus
+              cupiditate dolorem illo commodi minus quam amet, ipsam recusandae
+              consectetur debitis ratione voluptas nesciunt? Obcaecati autem et
+              a rerum quae ducimus illum ratione unde dolorum sed at molestias
+              accusamus aperiam, sequi dignissimos repellat architecto
+              blanditiis voluptas quia dolor ea consequatur, provident quidem
+              in. Sunt in vitae numquam! Corrupti obcaecati neque itaque
+              provident cum ullam esse deserunt consectetur magnam facilis, eum,
+              quia nesciunt maiores voluptate, accusantium possimus debitis
+              quaerat autem quos ea ex.
+              <br />
+              <br />
+              Facere aliquam porro pariatur exercitationem, provident possimus
+              quas ratione obcaecati aut fugiat. Alias quaerat facilis ipsam
+              suscipit. Id commodi, quibusdam molestiae a minima repellendus
+              maxime dolor ipsum, cupiditate harum facilis fuga, quos doloribus
+              at quo.
+              <br />
+              <br />
+              Dolorem est explicabo quidem assumenda quod facilis aspernatur,
+              veniam alias nesciunt harum, delectus cum corporis hic molestiae
+              pariatur magnam obcaecati architecto. Saepe esse optio facere vel
+              delectus! Optio vel nostrum facere modi iure excepturi cum
+              delectus harum temporibus ex totam, nihil doloribus quos
+              molestias! Eius autem quas quisquam atque architecto, amet
+              repellat aperiam perferendis est rerum, consequatur iure ratione
+              aliquid debitis distinctio veniam voluptate eveniet.
+            </p>
+          </div>
+          <div class="formateur">
+            <h2>Formateur :</h2>
+            <div class="formateur-content">
+              <div class="photo-formateur"></div>
+              <p class="nom-formateur">Lorem ipsum</p>
+            </div>
+          </div>
+          <a href="abonnements.html" class="button btn-ressources">
+            S'abonner
+          </a>
+        </section>
+        <div class="video-image">
+          <img
+            src="../assets/images/bg-ae.svg"
             alt="image d'arrière-plan"
             aria-hidden="true"
           />
         </div>
-      </section>
+      </div>
     </main>
+
     <footer>
       <div class="info-contact">
         <ul>
@@ -207,29 +243,35 @@
       <div class="reseaux-sociaux">
         <div class="logo-footer">
           <img
-            src="assets/images/logo-after-affects-online.svg"
+            src="../assets/images/logo-after-affects-online.svg"
             alt="logo After Effects Online"
           />
         </div>
         <ul>
           <li>
             <a href="https://www.youtube.com/user/dawantv" target="_blank"
-              ><img src="assets/images/youtube-icon.svg" alt="Icon Youtube"
+              ><img src="../assets/images/youtube-icon.svg" alt="Icon Youtube"
             /></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/company/dawan" target="_blank"
-              ><img src="assets/images/linkedin-icon.svg" alt="Icon Linkedin"
+              ><img
+                src="../assets/images/linkedin-icon.svg"
+                alt="Icon Linkedin"
             /></a>
           </li>
           <li>
             <a href="https://fr-fr.facebook.com/DawanFrance" target="_blank"
-              ><img src="assets/images/facebook-icon.svg" alt="Icon Facebook"
+              ><img
+                src="../assets/images/facebook-icon.svg"
+                alt="Icon Facebook"
             /></a>
           </li>
           <li>
             <a href="https://www.instagram.com/dawanfrance/" target="_blank"
-              ><img src="assets/images/instagram-icon.svg" alt="Icon Instagram"
+              ><img
+                src="../assets/images/instagram-icon.svg"
+                alt="Icon Instagram"
             /></a>
           </li>
         </ul>
