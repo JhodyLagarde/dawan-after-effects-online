@@ -1572,7 +1572,7 @@ p {
   z-index: 4;
 }
 
-.subscription-card-title h3 {
+.subscription-card-title h2 {
   font-size: 20px;
   width: 100%;
   color: #ffffff;
@@ -2073,7 +2073,7 @@ p {
     width: 95%;
     top: -55px;
   }
-  .subscription-card-title h3 {
+  .subscription-card-title h2 {
     font-size: 18px;
     top: 20px;
   }
