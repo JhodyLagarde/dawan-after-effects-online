@@ -162,29 +162,30 @@
       </nav>
       <section class="form-section inscription-section">
         <form class="form" action="#" method="post">
+          <p>Les champs marqués d'un <span class="champ">*</span> sont obligatoires.</p>
           <div class="container-input-form">
-            <label class="form-label" for="nom">Nom</label>
+            <label class="form-label" for="nom">Nom<span class="champ">*</span></label>
             <input type="text" id="nom" name="nom" required />
           </div>
 
           <div class="container-input-form">
-            <label class="form-label" for="prenom">Prénom</label>
+            <label class="form-label" for="prenom">Prénom<span class="champ">*</span></label>
             <input type="text" id="prenom" name="prenom" required />
           </div>
 
           <div class="container-input-form">
-            <label class="form-label" for="email">Email</label>
+            <label class="form-label" for="email">Email<span class="champ">*</span></label>
             <input type="email" id="email" name="email" required />
           </div>
 
           <div class="container-input-form">
-            <label class="form-label" for="password">Mot de passe</label>
+            <label class="form-label" for="password">Mot de passe<span class="champ">*</span></label>
             <input type="password" id="password" name="password" required />
           </div>
 
           <div class="container-input-form">
             <label class="form-label" for="confirm-password"
-              >Confirmer le mot de passe</label
+              >Confirmer le mot de passe<span class="champ">*</span></label
             >
             <input
               type="password"
@@ -193,7 +194,7 @@
               required
             />
           </div>
-
+          
           <div class="spec">
             <p class="title-spec">Spécifications du mots de passe</p>
             <ul>
