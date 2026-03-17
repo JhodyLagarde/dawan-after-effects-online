@@ -151,78 +151,68 @@
     </header>
 
     <main class="profile-main">
-      <h1>Profil</h1>
+      <h1>Modifier mes informations</h1>
       <nav aria-label="breadcrumb" class="breadcrumb-navigation">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Profil</li>
+          <li class="breadcrumb-item"><a href="profil.html">Profil</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Modifier profil
+          </li>
         </ol>
       </nav>
-      <section class="profile-section">
-        <div class="profile-info-container">
-          <div class="profil-title">
-            <h2>John Doe</h2>
-            <span
-              class="material-icons-round"
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              role="button"
-              tabindex="0"
-              aria-label="Bouton"
-              aria-describedby="Ouverture de la modal de changement d'information du profil utilisateur"
-            >
-              edit
-            </span>
-          </div>
-          <div class="email-profil">
-            <p><strong>Email :</strong></p>
-            <p>johndoe@domaine.com</p>
-          </div>
-          <div class="phone-profil">
-            <p><strong>Télephone :</strong></p>
-            <p>06 12 34 56 78</p>
-          </div>
-          <a href="modifiermdp.html" class="modif-mdp"
-            >Modifier mon mot de passe</a
+      <section class="profile-section modifications">
+        <div class="profile-info-modif-container">
+          <div
+            class="forename-modif"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#forename"
           >
-        </div>
-        <div class="abonnement">
-          <h2>Votre abonnement:</h2>
-          <div class="abonnement-info">
-            <p><strong>Abonnement :</strong></p>
-            <p>Basique</p>
+            <p><strong>Prénom :</strong></p>
+            <div class="info-modif">
+              <p>John</p>
+              <span class="material-icons-round">chevron_right</span>
+            </div>
           </div>
-          <a href="abonnements.html" class="button">Changer d'abonnement</a>
-          <a href="#" class="annuler-abo">Annuler mon abonnement</a>
-        </div>
-      </section>
-      <section class="recently-watched-section">
-        <div class="recently-watched-container">
-          <h2>Vue récemment</h2>
-          <div class="video-history-container">
-            <ul class="video-history">
-              <li>
-                <img
-                  src="../assets/images/player-video-profil.png"
-                  alt="placeholder-player-video"
-                />
-              </li>
-              <li>
-                <img
-                  src="../assets/images/player-video-profil.png"
-                  alt="placeholder-player-video"
-                />
-              </li>
-              <li>
-                <img
-                  src="../assets/images/player-video-profil.png"
-                  alt="placeholder-player-video"
-                />
-              </li>
-            </ul>
-            <a href="historique.html" class="button">Historique</a>
+          <hr class="hr-modif" />
+          <div
+            class="name-modif"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#name"
+          >
+            <p><strong>Nom :</strong></p>
+            <div class="info-modif">
+              <p>Doe</p>
+              <span class="material-icons-round">chevron_right</span>
+            </div>
+          </div>
+          <hr class="hr-modif" />
+          <div
+            class="email-modif"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#email"
+          >
+            <p><strong>Email :</strong></p>
+            <div class="info-modif">
+              <p>johndoe@domaine.com</p>
+              <span class="material-icons-round">chevron_right</span>
+            </div>
+          </div>
+          <hr class="hr-modif" />
+          <div
+            class="mobil-modif"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#mobil"
+          >
+            <p><strong>Télephone :</strong></p>
+            <div class="info-modif">
+              <p>06 12 34 56 78</p>
+              <span class="material-icons-round">chevron_right</span>
+            </div>
           </div>
         </div>
       </section>
@@ -230,17 +220,17 @@
       <!-- Modal -->
       <div
         class="modal fade"
-        id="exampleModal"
+        id="forename"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <p class="modal-title .fs-3" id="exampleModalLabel">
-                Modifier mon profil
-              </p>
+              <h2 class="modal-title fs-5" id="exampleModalLabel">
+                Modifier votre prénom
+              </h2>
               <button
                 type="button"
                 class="btn-close"
@@ -249,47 +239,123 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form class="form form-modal" action="#" method="post">
+              <form action="">
                 <div class="container-input-form">
-                  <label class="form-label" for="nom">Nom</label>
-                  <input type="text" id="nom" name="nom" />
-                </div>
-
-                <div class="container-input-form">
-                  <label class="form-label" for="prenom">Prénom</label>
-                  <input type="text" id="prenom" name="prenom" />
-                </div>
-
-                <div class="container-input-form">
-                  <label class="form-label" for="email">Email</label>
-                  <input type="email" id="email" name="email" />
-                </div>
-
-                <div class="container-input-form">
-                  <label class="form-label" for="telephone">Téléphone</label>
-                  <input type="tel" id="telephone" name="telephone" />
+                  <label class="form-label" for="nom">Prénom</label>
+                  <input type="text" id="nom" name="nom" required />
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="button-inactive btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Fermer
-              </button>
-              <button type="button" class="button">Changer mon profil</button>
+              <button type="button" class="button">Modifier</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="profil-image">
-        <img
-          src="../assets/images/bg-body2.svg"
-          alt="image d'arrière-plan"
-          aria-hidden="true"
-        />
+
+      <div
+        class="modal fade"
+        id="name"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="exampleModalLabel">
+                Modifier votre nom
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="container-input-form">
+                  <label class="form-label" for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" required />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button">Modifier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="email"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="exampleModalLabel">
+                Modifier votre email
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="container-input-form">
+                  <label class="form-label" for="nom">Email</label>
+                  <input type="text" id="nom" name="nom" required />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button">Modifier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="mobil"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="exampleModalLabel">
+                Modifier votre numéro de téléphone
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="post">
+                <div class="container-input-form">
+                  <label class="form-label" for="nom">Téléphone</label>
+                  <input type="text" id="nom" name="nom" required />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button">Modifier</button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 

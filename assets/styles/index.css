@@ -71,6 +71,11 @@ hr {
   background-color: rgba(0, 0, 91, 0.1);
 }
 
+.hr-modif {
+  width: 100%;
+  margin: 0;
+}
+
 /* Boutons */
 
 .button,
@@ -958,7 +963,7 @@ footer p {
   font-size: 20px;
 }
 
-.form input {
+form input {
   padding: 10px;
   border: 1px solid rgba(0, 0, 91, 0.2);
   border-radius: 4px;
@@ -1365,14 +1370,16 @@ p {
   gap: 16px;
 }
 
-.profil-title span {
+.profil-title .material-icons-round {
   font-size: 32px;
 }
 
-.name-profil,
-.forename-profil,
 .email-profil,
-.phone-profil {
+.mobil-profil,
+.name-modif,
+.forename-modif,
+.email-modif,
+.mobil-modif {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1437,6 +1444,36 @@ p {
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+/* Modif profil */
+.modifications {
+  margin-bottom: 64px;
+}
+
+.profile-info-modif-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 24px;
+  border: solid 1px #00004930;
+  border-radius: 4px;
+  width: 60%;
+  gap: 0;
+}
+
+.name-modif,
+.forename-modif,
+.email-modif,
+.mobil-modif {
+  padding: 24px 0;
+}
+
+.info-modif {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 
 /* Vidéo CSS */
@@ -2025,6 +2062,9 @@ p {
   .subscription {
     gap: 0;
   }
+  .profil {
+    padding: 8px;
+  }
 }
 
 @media (min-width: 1221px) {
@@ -2196,6 +2236,10 @@ p {
   }
   .history-list-link {
     height: auto;
+  }
+  /* Profil */
+  .profile-info-container {
+    width: 40%;
   }
 }
 
