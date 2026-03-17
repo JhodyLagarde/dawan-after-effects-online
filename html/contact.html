@@ -161,40 +161,44 @@
       <section class="form-section inscription-section">
         <form class="form" action="#" method="post">
           <div class="container-input-form">
-            <label class="form-label" for="nom">Nom</label>
+            <label class="form-label" for="nom">Nom<span class="champ">*</span></label>
             <input type="text" id="nom" name="nom" required />
           </div>
 
           <div class="container-input-form">
-            <label class="form-label" for="prenom">Prénom</label>
+            <label class="form-label" for="prenom">Prénom<span class="champ">*</span></label>
             <input type="text" id="prenom" name="prenom" required />
           </div>
 
           <div class="container-input-form">
-            <label class="form-label" for="email">Email</label>
+            <label class="form-label" for="email">Email<span class="champ">*</span></label>
             <input type="email" id="email" name="email" required />
           </div>
 
           <div class="container-input-form">
-            <label class="form-label" for="telephone">Téléphone</label>
+            <label class="form-label" for="telephone">Téléphone<span class="champ">*</span></label>
             <input type="tel" id="telephone" name="telephone" required />
           </div>
 
           <div class="container-input-form">
             <label class="form-label" for="objet">Objet</label>
-            <input type="text" id="objet" name="objet" required />
+            <input type="text" id="objet" name="objet" />
           </div>
 
           <div class="container-input-form">
-            <label class="form-label" for="message">Message</label>
+            <label class="form-label" for="message">Message<span class="champ">*</span></label>
             <textarea name="message" id="message"></textarea>
           </div>
+<<<<<<< HEAD
           <p>
             Vous disposez d'un droit d'accès, de modification, de rectification
             et de suppression des données vous concernant (loi "Informatique et
             Libertés" du 6 janvier 1978). Pour toute demande, adressez-vous à
             commercial@dawan.fr
           </p>
+=======
+          <p>Les champs marqués d'un <span class="champ">*</span> sont obligatoires.</p>
+>>>>>>> 54e0c47fb62da3dd8a36e4dee2385c58144e486c
           <button type="submit">Envoyer</button>
         </form>
         <a href="abonnements.html" class="consulter-abo lien">
