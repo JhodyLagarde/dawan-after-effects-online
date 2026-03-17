@@ -839,7 +839,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   background-color: #ebebff;
-  padding: 64px 124px;
+  padding: 64px 124px 0 124px;
   gap: 64px;
 }
 
@@ -914,7 +914,7 @@ footer p {
 }
 /* Forms CSS */
 .champ {
- color: #c00000;
+  color: #c00000;
 }
 
 .form-section {
@@ -1852,14 +1852,15 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
 }
 
 .dawan-avis {
+  gap: 16px;
   padding: 0px 248px 86px 248px;
 }
 
-.dawan-avis-acc{
+.dawan-avis-acc {
+  gap: 48px;
   padding: 64px 248px 86px 248px;
 }
 
@@ -1996,7 +1997,7 @@ p {
   padding: 8px;
 }
 
-.history-list-link:hover{
+.history-list-link:hover {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.35);
 }
 
