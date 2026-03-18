@@ -83,6 +83,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   padding: 8px 32px;
   border-radius: 24px;
@@ -168,6 +169,7 @@ nav {
   align-items: center;
   gap: 4px;
   padding: 10px 16px;
+  white-space: nowrap;
 }
 
 .menu li a span {
@@ -571,7 +573,7 @@ footer p {
 }
 
 .hero .hero-image img {
-  max-width: 800px;
+  max-width: 1100px;
 }
 
 .videos-e-learning {
@@ -717,6 +719,12 @@ footer p {
   padding: 0 16px;
 }
 
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .pricing-scroll {
   display: flex;
   gap: 32px;
@@ -745,8 +753,9 @@ footer p {
     4px 4px 8px #fff inset;
   padding: 32px 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease;
@@ -790,6 +799,11 @@ footer p {
   gap: 8px;
 }
 
+.no-feature {
+  text-decoration: line-through;
+  color: #00004980;
+}
+
 .pricing-card span {
   width: 44px;
   height: 44px;
@@ -831,6 +845,10 @@ footer p {
 .carousel-controls-bottom button.disabled {
   opacity: 0.25;
   pointer-events: none;
+}
+
+.btn-card-abo {
+  text-align: center;
 }
 
 .formations {
@@ -914,7 +932,7 @@ footer p {
 }
 /* Forms CSS */
 .champ {
-  color: #c00000;
+  color: #1c192c;
 }
 
 .form-section {
@@ -1097,6 +1115,21 @@ form input {
   position: relative;
 }
 
+.text-chapitre {
+  font-size: 20px;
+  padding: 0 124px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-abo-chap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
 .chapitres-cards-container1,
 .chapitres-cards-container2 {
   display: flex;
@@ -1203,13 +1236,21 @@ figure {
   width: 0%;
 }
 
+.chapitre-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 /*Episodes CSS */
 
 .episode-section {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 64px;
   align-items: center;
   justify-self: center;
   margin-bottom: 86px;
@@ -1259,7 +1300,10 @@ figure {
 }
 
 .video-player-episode figure {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  gap: 16px;
 }
 
 .player-video-titre {
@@ -1273,6 +1317,9 @@ figure {
   position: relative;
   z-index: 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .titre-section-list {
@@ -1523,7 +1570,7 @@ p {
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 32px;
   width: 778px;
   margin-bottom: 86px;
@@ -1786,11 +1833,10 @@ p {
   flex-direction: column-reverse;
   align-items: center;
   gap: 16px;
-  width: 275px;
 }
 
 .logo-dawan img {
-  width: 160px;
+  width: 560px;
 }
 
 .dawan-presentation {
@@ -1805,17 +1851,18 @@ p {
 
 .dawan-about {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 64px 248px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 248px 0 248px;
+  gap: 32px;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
+  text-align: justify;
   gap: 16px;
-  width: 70%;
+  width: 100%;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -1827,7 +1874,7 @@ p {
   align-items: center;
   gap: 64px;
   justify-content: space-between;
-  padding: 0px 248px 64px 248px;
+  padding: 0px 248px 124px 248px;
 }
 
 .dawan-fondeur img {
@@ -1836,11 +1883,16 @@ p {
   border-radius: 4px;
 }
 
-.dawan-fondeur p {
+.dawan-fondeur blockquote {
   font-size: 20px;
   width: 70%;
   font-weight: 500;
   line-height: 24px;
+  text-align: justify;
+}
+
+.dawan-fondeur blockquote p {
+  width: 100%;
 }
 
 /* Avis */
@@ -2041,6 +2093,10 @@ p {
     font-size: 24px;
   }
 
+  .hero .hero-image img {
+    max-width: 900px;
+  }
+
   .avantages-e-learning {
     padding: 64px 24px;
   }
@@ -2143,6 +2199,12 @@ p {
     padding: 124px 24px 64px 24px;
     gap: 32px;
   }
+  .hero .hero-image {
+    top: 55%;
+  }
+  .hero .hero-image img {
+    max-width: 750px;
+  }
   .form-section {
     padding: 0px 24px;
   }
@@ -2234,6 +2296,10 @@ p {
   .chapitres-cards-container2 {
     gap: 16px;
   }
+  .text-chapitre {
+    padding: 0 24px;
+    font-size: 18px;
+  }
   .article-chapitre-card {
     width: 100%;
     max-width: 340px;
@@ -2270,7 +2336,7 @@ p {
     line-height: 22px;
   }
   .hero .hero-image img {
-    max-width: 300px;
+    display: none;
   }
   .button,
   .button-inactive {
@@ -2366,6 +2432,10 @@ p {
     flex-direction: column;
     gap: 32px;
     align-items: center;
+  }
+  .text-chapitre {
+    padding: 0px;
+    font-size: 16px;
   }
   article h2 {
     font-size: 20px;
