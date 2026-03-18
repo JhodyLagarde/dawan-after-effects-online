@@ -929,6 +929,11 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.sub-image {
+  top: 75%;
+}
+
 /* Forms CSS */
 .champ {
   color: #1c192c;
