@@ -212,13 +212,14 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
 }
 
 .profil-head-content p {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .profil-head hr {
@@ -2310,7 +2311,7 @@ p {
   }
   /* apropos */
   .dawan-about {
-    padding: 64px 24px;
+    padding: 64px 24px 0 24px;
   }
   .dawan-fondeur {
     padding: 0px 24px 64px 24px;
@@ -2559,6 +2560,9 @@ p {
     width: 100%;
     font-size: 16px;
     line-height: 20px;
+  }
+  .dawan-fondeur blockquote {
+    width: 100%;
   }
   .dawan-avis {
     padding: 0px 24px 86px 24px;
